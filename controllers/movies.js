@@ -1,8 +1,5 @@
 const Movie = require('../models/movie');
 const ForbiddenError = require('../errors/ForbiddenError');
-const NotFoundError = require('../errors/NotFoundError');
-const BadRequestError = require('../errors/BadRequestError');
-const { STATUS_CREATED } = require('../errors/errors');
 
 // создаем карточку фильма POST http://localhost:3000/movies/
 const createMovie = (req, res, next) => {
